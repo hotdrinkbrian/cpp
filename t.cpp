@@ -9,6 +9,7 @@ int main()
     cout << chinese::LCW() << endl;
     cout << LCW() << endl;
 
+
     //class
     yonex vt80;
     vt80.length = 675;
@@ -18,7 +19,13 @@ int main()
     cout << vt80.length << endl;
     cout << vt80.getWeight() << endl; 
     cout << vt80.getArea() << endl;
+    //static
     cout << vt80.getNumRac() << endl;
+    cout << yonex::getNumOfRac() << endl;
+    //virtual
+    victor ti70;
+    vt80.slogan();
+    ti70.slogan();
 
     //pointer
     yonex *vt70 = new yonex;
@@ -26,7 +33,10 @@ int main()
     vt80_pt = &vt80;
     cout << vt70->getYear() << endl; 
     cout << vt80_pt->getYear() << endl; 
+    //static
     cout << vt80.getNumRac() << endl;
+    cout << vt70->getNumOfRac() << endl;
+    cout << Racket::getNumOfRac() << endl;
 
     //template
     player<int> LD;

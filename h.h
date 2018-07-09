@@ -35,6 +35,8 @@ class Racket
         void setWeight(int pp);
         int getWeight();
         int getNumRac(){ return NumOfRac; };
+        static int getNumOfRac(){ return NumOfRac; };
+        virtual void slogan(){ cout << "Never settle." << endl; };
     private:
 	    int weight;	
 };
@@ -53,6 +55,21 @@ class yonex : public Racket
         void setArea(string pp);
 	    yonex();
 	    ~yonex();
+};
+
+class victor : public Racket
+{
+    private:
+        //string area;
+
+    public:
+        void slogan(){ cout << "faster." << endl; };
+	    //int getYear();
+        //string getArea();
+	    //void setYear(int pp);
+        //void setArea(string pp);
+	    //victor();
+	    //~victor();
 };
 
 
