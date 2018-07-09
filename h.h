@@ -10,42 +10,71 @@ class Racket
 {
     public:
         int length;
-	int no;
+	    int year;
+        void setWeight(int pp);
+        int getWeight();
     private:
-	//int no;	
+	    int weight;	
 };
 
 class yonex : public Racket
 {
     private:
-        //int No;
+        string area;
+
     public:
-        int weight;
-	int getNo();
-	void setNo(int pp);
-	yonex();
-	~yonex();
+	    int getYear();
+	    void setYear(int pp);
+	    yonex();
+	    ~yonex();
 };
+
+
+
+void Racket::setWeight(int pp)
+{
+    weight = pp;
+}
+
+int Racket::getWeight()
+{
+    return weight;
+}
 
 yonex::yonex()
 {
-    no = 2017;
-    cout << "yonex is being created!" << endl;
+    year = 2018;
+    cout << "yy created!" << endl;
 }
 
 yonex::~yonex()
 {
-    cout << "yonex is being deleted!" << endl;
+    cout << "yy deleted!" << endl;
 }
 
-int yonex::getNo()
+int yonex::getYear()
 {
-    return no;
+    return year;
 }
 
-void yonex::setNo(int pp)
+void yonex::setYear(int pp)
 {
-    no = pp;
+    year = pp;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #endif

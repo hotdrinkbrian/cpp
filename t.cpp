@@ -2,27 +2,24 @@
 
 int main()
 {
+    //Racket vt80;
+    yonex vt80;
+    vt80.length = 675;
+    vt80.setWeight(85);
+    //vt80.weight = 85;
+    vt80.setYear(2011);
+    cout << vt80.length << endl;
+    cout << vt80.getWeight() << endl; 
+    //cout << vt80.getYear() << endl; 
 
-    cout << "hello" << endl;
-    //Racket dd;
-    yonex dd;
-    dd.length = 2;
-    dd.weight = 89;
-    dd.setNo(7777);
-    cout << dd.length << endl;
-    cout << dd.weight << endl; 
-    //cout << dd.getNo() << endl; 
+    yonex *vt70 = new yonex;
+    yonex *vt80_pt;
+    vt80_pt = &vt80;
+    cout << vt70->getYear() << endl; 
+    cout << vt80_pt->getYear() << endl; 
 
-    yonex *yy = new yonex;
-    yonex *yy1;
-    yy1 = &dd;
-    cout << yy->getNo() << endl; 
-    cout << yy1->getNo() << endl; 
-    //yy->getNo()
-
-    delete yy;
-	
-    cout << dd.getNo() << endl;
+    delete vt70;
+    cout << vt80.getYear() << endl;
 
     return 0;
 }
