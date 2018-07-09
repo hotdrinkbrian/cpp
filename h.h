@@ -8,44 +8,44 @@ using namespace std;
 
 class Racket
 {
-        public:
-                int length;
-		int no;
-	private:
-		//int no;	
+    public:
+        int length;
+	int no;
+    private:
+	//int no;	
 };
 
 class yonex : public Racket
 {
-	private:
-		//int No;
-        public:
-                int weight;
-		int getNo();
-		void setNo(int pp);
-		yonex();
-		~yonex();
+    private:
+        //int No;
+    public:
+        int weight;
+	int getNo();
+	void setNo(int pp);
+	yonex();
+	~yonex();
 };
 
 yonex::yonex()
 {
-	no = 2017;
-	cout << "yonex is being created!" << endl;
+    no = 2017;
+    cout << "yonex is being created!" << endl;
 }
 
 yonex::~yonex()
 {
-	cout << "yonex is being deleted!" << endl;
+    cout << "yonex is being deleted!" << endl;
 }
 
 int yonex::getNo()
 {
-	return no;
+    return no;
 }
 
 void yonex::setNo(int pp)
 {
-	no = pp;
+    no = pp;
 }
 
 #endif
