@@ -3,6 +3,7 @@
 
 
 #include<iostream>
+#include<vector>
 
 using namespace std;
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~namespace
@@ -60,10 +61,13 @@ class yonex : public Racket
 class victor : public Racket
 {
     private:
+        int secret;// = 9900;
         //string area;
 
     public:
         void slogan(){ cout << "faster." << endl; };
+        void set_secret(int par){ secret = par; };
+        int * get_secret(){ return &secret; };
 	    //int getYear();
         //string getArea();
 	    //void setYear(int pp);

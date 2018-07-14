@@ -1,4 +1,5 @@
 #include "h.h" 
+//#include<vector>
 
 //int Racket::NumOfRac = 0;
 
@@ -45,6 +46,27 @@ int main()
     player<string> MMT;
     MMT.setHeight("173");
     cout << MMT.getHeight() << endl;
+
+    //* method??
+    ti70.set_secret(9900);
+    cout << *ti70.get_secret() << endl;
+    int * var_secret = ti70.get_secret();
+    cout << var_secret << endl;
+
+    //vector
+    vector <int> vv;
+    vv.push_back(6);
+    vv.push_back(7);
+    vv.push_back(8);
+    cout << vv[0] << endl;
+    //interator
+    vector<int>::iterator itrtr;
+    for (itrtr = vv.begin(); itrtr != vv.end(); ++itrtr)
+    {
+        //cout << *itrtr << endl;
+        int &ww = *itrtr;
+        cout << ww << endl;
+    }
 
 
     delete vt70;
